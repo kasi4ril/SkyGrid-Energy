@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for a residential, commercial or small industrial solar energy solution from SkyGrid Energy Solutions.">
+    <meta name="author" content="SkyGrid Energy Solutions">
+    <title>Solar Application | SkyGrid Energy Solutions</title>
+</head>
+
+<body>
+
+    <header>
+        <figure>
+            <img src="../images/skygrid-logo.svg"
+                 alt="SkyGrid Energy Solutions company logo"
+                 width="180">
+            <figcaption>Intelligent Green Energy Solutions</figcaption>
+        </figure>
+
+        <h1>Apply for a Solar Energy Solution</h1>
+        <p>Let's Understand Your Electricity Requirements.</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../services.html">Our Services</a></li>
+                <li><a href="../blog.html">Energy Blog</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+                <li><a href="application.html" aria-current="page">Apply for Solar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="introduction-heading">
+            <h2 id="introduction-heading">Customer Solar Application</h2>
+
+            <p>
+                Thank you for your interest in SkyGrid Energy Solutions.
+                Complete the form below to tell us about your property,
+                electricity requirements and preferred solar solution.
+            </p>
+
+            <p>
+                The information will help us understand your needs
+                and prepare for a technical assessment.
+            </p>
+        </section>
+
+        <section aria-labelledby="application-form-heading">
+            <h2 id="application-form-heading">Application Details</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>1. Applicant Information</legend>
+
+                    <p>
+                        <label for="applicant-name">Full Name:</label><br>
+                        <input type="text"
+                               id="applicant-name"
+                               name="applicant_name"
+                               autocomplete="name"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="applicant-email">Email Address:</label><br>
+                        <input type="email"
+                               id="applicant-email"
+                               name="applicant_email"
+                               autocomplete="email"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="applicant-phone">Telephone Number:</label><br>
+                        <input type="tel"
+                               id="applicant-phone"
+                               name="applicant_phone"
+                               autocomplete="tel"
+                               placeholder="+234 800 000 0000"
+                               required>
+                    </p>
+
+                    <p>
+                        <label for="business-name">
+                            Business or Organisation Name (if applicable):
+                        </label><br>
+
+                        <input type="text"
+                               id="business-name"
+                               name="business_name"
+                               autocomplete="organization">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Property Information</legend>
+
+                    <p>
+                        <label for="property-type">Property Type:</label><br>
+
+                        <select id="property-type"
+                                name="property_type"
+                                required>
+
+                            <option value="">Select property type</option>
+                            <option value="residential">Residential Building</option>
+                            <option value="office">Office Building</option>
+                            <option value="commercial">Commercial Facility</option>
+                            <option value="industrial">Small Industrial Facility</option>
+                            <option value="institutional">School or Institution</option>
+                            <option value="other">Other</option>
+
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="property-address">Installation Address:</label><br>
+
+                        <textarea id="property-address"
+                                  name="property_address"
+                                  rows="4"
+                                  cols="40"
+                                  placeholder="Enter the full installation address"
+                                  required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="state">State:</label><br>
+
+                        <select id="state" name="state" required>
+                            <option value="">Select state</option>
+                            <option value="plateau">Plateau</option>
+                            <option value="rivers">Nasarawa</option>
+                            <option value="fct">Federal Capital Territory</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Electricity Requirements</legend>
+
+                    <p>
+                        <label for="monthly-bill">
+                            Approximate Monthly Electricity Expenditure (Naira):
+                        </label><br>
+
+                        <input type="number"
+                               id="monthly-bill"
+                               name="monthly_electricity_expenditure"
+                               min="0"
+                               step="1000"
+                               placeholder="e.g. 50000">
+                    </p>
+
+                    <p>
+                        <label for="backup-hours">
+                            How many hours of backup power do you require?
+                        </label><br>
+
+                        <select id="backup-hours"
+                                name="backup_hours"
+                                required>
+
+                            <option value="">Select backup duration</option>
+                            <option value="4-6">4–6 hours</option>
+                            <option value="6-8">6–8 hours</option>
+                            <option value="8-12">8–12 hours</option>
+                            <option value="12-18">12–18 hours</option>
+                            <option value="18-24">18–24 hours</option>
+                            <option value="continuous">Continuous power requirement</option>
+
+                        </select>
+                    </p>
+
+                    <p>What appliances do you intend to power?</p>
+
+                    <input type="checkbox" id="lighting" name="appliances[]" value="lighting">
+                    <label for="lighting">Lighting</label><br>
+
+                    <input type="checkbox" id="fans" name="appliances[]" value="fans">
+                    <label for="fans">Fans</label><br>
+
+                    <input type="checkbox" id="television" name="appliances[]" value="television">
+                    <label for="television">Television</label><br>
+
+                    <input type="checkbox" id="refrigerator" name="appliances[]" value="refrigerator">
+                    <label for="refrigerator">Refrigerator</label><br>
+
+                    <input type="checkbox" id="air-conditioner" name="appliances[]" value="air-conditioner">
+                    <label for="air-conditioner">Air Conditioners</label><br>
+
+                    <input type="checkbox" id="pumping-machine" name="appliances[]" value="pumping-machine">
+                    <label for="pumping-machine">Water Pumping Machine</label><br>
+
+                    <input type="checkbox" id="industrial-equipment" name="appliances[]" value="industrial-equipment">
+                    <label for="industrial-equipment">Industrial Equipment</label><br>
+
+                    <input type="checkbox" id="other-appliances" name="appliances[]" value="other">
+                    <label for="other-appliances">Other Appliances</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>4. Preferred Solar Solution</legend>
+
+                    <p>Which solution are you interested in?</p>
+
+                    <input type="radio"
+                           id="solar-purchase"
+                           name="solution_type"
+                           value="outright-purchase"
+                           required>
+                    <label for="solar-purchase">Outright Purchase</label><br>
+
+                    <input type="radio"
+                           id="paygo"
+                           name="solution_type"
+                           value="paygo">
+                    <label for="paygo">Pay-As-You-Go Solar</label><br>
+
+                    <input type="radio"
+                           id="lease"
+                           name="solution_type"
+                           value="lease">
+                    <label for="lease">Lease or Flexible Payment Plan</label><br>
+
+                    <input type="radio"
+                           id="consultation"
+                           name="solution_type"
+                           value="consultation">
+                    <label for="consultation">Technical Consultation</label><br>
+
+                    <p>
+                        <label for="budget">Estimated Project Budget (Naira):</label><br>
+
+                        <select id="budget" name="budget">
+                            <option value="">Select estimated budget</option>
+                            <option value="below-500k">Below ₦500,000</option>
+                            <option value="500k-1m">₦500,000 – ₦1,000,000</option>
+                            <option value="1m-3m">₦1,000,000 – ₦3,000,000</option>
+                            <option value="3m-5m">₦3,000,000 – ₦5,000,000</option>
+                            <option value="above-5m">Above ₦5,000,000</option>
+                            <option value="undecided">Not yet decided</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>5. Additional Information</legend>
+
+                    <p>
+                        <label for="additional-information">
+                            Tell us anything else we should know:
+                        </label><br>
+
+                        <textarea id="additional-information"
+                                  name="additional_information"
+                                  rows="6"
+                                  cols="45"
+                                  placeholder="Provide additional information about your energy requirements..."></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>6. Declaration and Consent</legend>
+
+                    <p>
+                        <input type="checkbox"
+                               id="information-accuracy"
+                               name="information_accuracy"
+                               value="confirmed"
+                               required>
+
+                        <label for="information-accuracy">
+                            I confirm that the information provided is
+                            accurate to the best of my knowledge.
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="checkbox"
+                               id="data-consent"
+                               name="data_consent"
+                               value="agreed"
+                               required>
+
+                        <label for="data-consent">
+                            I consent to SkyGrid Energy Solutions using
+                            my information to assess and respond to
+                            this application.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit Solar Application</button>
+                    <button type="reset">Reset Application</button>
+                </p>
+
+            </form>
+        </section>
+
+        <section aria-labelledby="assistance-heading">
+            <h2 id="assistance-heading">Need Assistance?</h2>
+
+            <p>
+                If you need help completing this application,
+                please contact our team.
+            </p>
+
+            <p>
+                <a href="../contact.html">Contact SkyGrid Energy Solutions</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <strong>SkyGrid Energy Solutions</strong><br>
+            Intelligent Green Energy Solutions
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:info@skygridenergy.com">
+                info@skygridenergy.com
+            </a>
+        </p>
+
+        <p>
+            <a href="../index.html">Home</a> |
+            <a href="../about.html">About Us</a> |
+            <a href="../services.html">Services</a> |
+            <a href="../contact.html">Contact Us</a>
+        </p>
+
+        <p>
+            &copy; 2026 SkyGrid Energy Solutions. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
